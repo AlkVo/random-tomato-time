@@ -1,4 +1,4 @@
-let workTime = [20, 25, 30];
+let workTime = [20, 20, 25, 20, 15, 25, 30];
 let restTime = [5, 10, 12];
 
 const warnTagEl = document.getElementById('warn-tag');
@@ -7,7 +7,7 @@ const workTimeEl = document.getElementById('work-time-number');
 const restTimeEl = document.getElementById('rest-time-number');
 
 button.addEventListener('click', () => {
-  let work = workTime[Math.floor(Math.random() * 3)];
+  let work = workTime[Math.floor(Math.random() * 7)];
   let rest = restTime[Math.floor(Math.random() * 3)];
   workTimeEl.innerHTML = work.toString();
   restTimeEl.innerHTML = rest.toString();
