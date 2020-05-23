@@ -4,48 +4,63 @@
   padding: 0px;
 }
 
-body {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+p {
+  display: inline;
+}
+
 .warn-tag {
   font-size: 1rem;
   background-color: cadetblue;
   color: aliceblue;
   padding: 5px 20px;
   border-radius: 20px;
+  text-align: center;
   position: absolute;
   z-index: 1;
-  top: 20%;
+  top: 15%;
+  left: 25%;
   display: none;
+}
+
+.box {
+  display: flex;
+}
+.excuse-time {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  margin: auto 5px;
+  background-color: cadetblue;
+  color: white;
 }
 
 .time {
   margin: 10px;
-  font-size: 4rem;
+  font-size: 1.5rem;
+  color: cadetblue;
 }
 
 button {
-  margin: 20px;
   border: 0px;
   padding: 15px;
   text-align: center;
   outline: none;
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
+  left: 40%;
 }
 button:hover {
   background-color: cadetblue;
-  color: beige;
+  color: white;
 }
 button:active {
   background-color: orange;
   color: white;
-}
-
-p {
-  display: inline;
 }
