@@ -1,4 +1,4 @@
-let workTime = [20, 20, 25, 20, 15, 25, 30];
+let workTime = [20, 20, 25, 20, 15, 25, 20];
 let restTime = [5, 10, 12];
 
 const warnTagEl = document.getElementById('warn-tag');
