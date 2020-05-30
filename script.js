@@ -20,7 +20,7 @@ const endTimeEl = document.getElementById('end-time');
 const WORK = 'work';
 const REST = 'rest';
 
-button.addEventListener('click', () => {
+function gogogo() {
   //设置每个时间段
   setElTime(workTimeEl1, restTimeEl1, excuteTimeEl1, 0, 0);
 
@@ -53,7 +53,8 @@ button.addEventListener('click', () => {
   setTimeout(() => {
     warnTagEl.style.display = 'none';
   }, 1500);
-});
+}
+button.addEventListener('click', gogogo);
 
 function getRandomTime(type) {
   switch (type) {
@@ -88,3 +89,5 @@ function setElTime(workTimeEl, restTimeEl, excuteTimeEl, elaspedTime) {
 function getElTime(element) {
   return +element.innerText;
 }
+
+gogogo();
